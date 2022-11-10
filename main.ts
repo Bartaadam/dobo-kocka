@@ -7,7 +7,7 @@ input.onGesture(Gesture.Shake, function () {
         # . . . #
         # # # # #
         `)
-    basic.pause(100)
+    basic.pause(500)
     basic.showLeds(`
         . . # . .
         . # . # .
@@ -15,21 +15,53 @@ input.onGesture(Gesture.Shake, function () {
         . # . # .
         . . # . .
         `)
-    basic.pause(100)
+    basic.pause(500)
     basic.showLeds(`
+        . . # . .
+        . . # . .
         # # # # #
-        # . . . #
-        # . . . #
-        # . . . #
-        # # # # #
+        . . # . .
+        . . # . .
         `)
-    basic.pause(100)
+    basic.pause(500)
     basic.showLeds(`
         . . # . .
         . # . # .
         # . . . #
         . # . # .
         . . # . .
+        `)
+    basic.pause(50)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+    basic.pause(50)
+    basic.showLeds(`
+        . . # . .
+        . . # . .
+        # # # # #
+        . . # . .
+        . . # . .
+        `)
+    basic.pause(50)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+    basic.pause(50)
+    basic.showLeds(`
+        # # # # #
+        # . . . #
+        # . . . #
+        # . . . #
+        # # # # #
         `)
     dobókocka = randint(1, 6)
     if (dobókocka == 1) {
@@ -43,47 +75,47 @@ input.onGesture(Gesture.Shake, function () {
     }
     if (dobókocka == 2) {
         basic.showLeds(`
-            . . . . #
             . . . . .
+            . . . # .
             . . . . .
+            . # . . .
             . . . . .
-            # . . . .
             `)
     }
     if (dobókocka == 3) {
         basic.showLeds(`
-            . . . . #
             . . . . .
+            . . . # .
             . . # . .
+            . # . . .
             . . . . .
-            # . . . .
             `)
     }
     if (dobókocka == 4) {
         basic.showLeds(`
-            # . . . #
             . . . . .
+            . # . # .
             . . . . .
+            . # . # .
             . . . . .
-            # . . . #
             `)
     }
     if (dobókocka == 5) {
         basic.showLeds(`
-            # . . . #
             . . . . .
+            . # . # .
             . . # . .
+            . # . # .
             . . . . .
-            # . . . #
             `)
     }
     if (dobókocka == 6) {
         basic.showLeds(`
-            # . . . #
             . . . . .
-            # . . . #
+            . # . # .
+            . # . # .
+            . # . # .
             . . . . .
-            # . . . #
             `)
     }
 })
